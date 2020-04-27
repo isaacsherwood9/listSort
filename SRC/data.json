@@ -1,0 +1,282 @@
+[
+  {
+    "id": "7dc6dd23-d391-4e56-8235-db5225d47d22",
+    "name": "broccoli",
+    "category": "fresh produce",
+    "unit": "kg",
+    "quantity": 0.5
+  },
+  {
+    "id": "52a5840d-a77d-426f-bd3c-0cf943c61e89",
+    "name": "milk",
+    "category": "dairy",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "efcb9157-611a-4345-a99a-fbeeb4f475ca",
+    "name": "fettuccine",
+    "category": "fresh produce",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "84313d93-517e-4260-850c-f5b98127449b",
+    "name": "sushi rolls",
+    "category": "fresh produce",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "b65a3818-cc33-4a99-82d2-be84b2d0e1a9",
+    "name": "canned tomatoes",
+    "category": "pantry",
+    "unit": "each",
+    "quantity": 2
+  },
+  {
+    "id": "76fdeb57-865a-4754-abc0-d2283f797627",
+    "name": "banana",
+    "category": "fresh produce",
+    "unit": "kg",
+    "quantity": 0.7
+  },
+  {
+    "id": "9a5b895a-f52f-4575-b0c3-c707591275e4",
+    "name": "sausages",
+    "category": "fresh meat",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "e2793125-0dd4-4dce-86eb-f4ac8d787dee",
+    "name": "sliced bread",
+    "category": "bakery",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "a3a6a1c2-762a-4706-8dc5-1e187d34d948",
+    "name": "potatoes",
+    "category": "fresh produce",
+    "unit": "kg",
+    "quantity": 2.1
+  },
+  {
+    "id": "8cc40918-90f2-4f4d-8f02-6e9b5df355dd",
+    "name": "coffee ground",
+    "category": "beverages",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "6ea0fedf-c3b8-4ebb-b6d1-0a6b15c910eb",
+    "name": "dried mushroom",
+    "category": "pantry",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "89464c12-7d90-4ca1-bd37-cc568cba4f75",
+    "name": "nail polish",
+    "category": "beauty",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "0d1dd202-dc9e-406b-8d59-8ecf69a29475",
+    "name": "dishwashing liquid",
+    "category": "cleaning",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "e45e908a-c490-466f-b0e3-e40a9a5be3dc",
+    "name": "AA batteries",
+    "category": "household",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "ea6a3682-53bf-4cdf-b5af-6cdd4f8e37fe",
+    "name": "cashew nuts",
+    "category": "fresh produce",
+    "unit": "kg",
+    "quantity": 0.35
+  },
+  {
+    "id": "4c3049c7-d871-41c8-95fc-a73b470074aa",
+    "name": "rump steak",
+    "category": "fresh meat",
+    "unit": "kg",
+    "quantity": 0.7
+  },
+  {
+    "id": "5ea9d723-c0a5-4ffc-806b-39cfbd305651",
+    "name": "sweet potato",
+    "category": "fresh produce",
+    "unit": "kg",
+    "quantity": 0.6
+  },
+  {
+    "id": "bb073168-b5d5-442b-8b6a-6e54c249aabe",
+    "name": "frozen salmon",
+    "category": "seafood",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "7ba89be3-5be3-40ae-9493-b0ebfff17cfe",
+    "name": "eggs",
+    "category": "dairy",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "73d9cdcc-64f9-4044-9923-59e7e4695194",
+    "name": "zucchini",
+    "category": "fresh produce",
+    "unit": "kg",
+    "quantity": 0.24
+  },
+  {
+    "id": "4fd2c4cc-730e-4b49-b64a-95887071a934",
+    "name": "floor cleaner",
+    "category": "cleaning",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "04115a6e-dce9-435f-bc13-3f9c5657211a",
+    "name": "roast beef",
+    "category": "fresh meat",
+    "unit": "kg",
+    "quantity": 1.2
+  },
+  {
+    "id": "d8a8f601-926b-4a2e-81bd-2dc30f706ca3",
+    "name": "atlantic salmon smoked",
+    "category": "seafood",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "1d37a41d-18b5-4db2-8aba-39012fad0339",
+    "name": "green tea",
+    "category": "beverages",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "e258b355-3fc0-4cb2-9ece-02d966c27d5b",
+    "name": "garlic salt",
+    "category": "pantry",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "4722ed4e-0345-4869-8b15-8db68eb60aca",
+    "name": "carrots",
+    "category": "fresh produce",
+    "unit": "kg",
+    "quantity": 1
+  },
+  {
+    "id": "ee256ca8-e906-459b-bafd-1c9aa3ca839f",
+    "name": "strawberry jam",
+    "category": "pantry",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "b0a5402f-721c-452a-a1b3-dd243c8017a9",
+    "name": "corn flakes",
+    "category": "pantry",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "82de371e-3b35-4fc5-b522-36e521a754d2",
+    "name": "frozen corn",
+    "category": "dairy",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "92202a19-d9ec-4f40-ab40-811595411e7b",
+    "name": "coconut milk",
+    "category": "pantry",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "bfc41501-4f1c-4ec1-bf1c-b0719b3e3b15",
+    "name": "celery",
+    "category": "fresh produce",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "f2d388c7-05c9-4c2e-9762-3606d577885a",
+    "name": "couscous",
+    "category": "pantry",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "f8616416-11e9-41fd-b5b2-cfc435216fc1",
+    "name": "basil",
+    "category": "fresh produce",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "3e5dd914-2642-4fa5-9f50-fbc3deeec951",
+    "name": "frozen beans",
+    "category": "dairy",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "253a3765-0000-49b5-85aa-135dd6d93677",
+    "name": "winter vegetable mix",
+    "category": "dairy",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "cb979398-99b6-4b61-8682-a4ab467f4511",
+    "name": "ham slices",
+    "category": "delicatessen",
+    "unit": "kg",
+    "quantity": 0.25
+  },
+  {
+    "id": "424a816d-5906-4735-af5d-12aae1943afb",
+    "name": "mixed beans canned",
+    "category": "pantry",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "d900aab4-21d2-4d86-b14a-721c4695e59b",
+    "name": "baby spinach",
+    "category": "fresh produce",
+    "unit": "each",
+    "quantity": 1
+  },
+  {
+    "id": "b54526f9-d494-456e-b0dd-8cc764ac6938",
+    "name": "avocado",
+    "category": "fresh produce",
+    "unit": "each",
+    "quantity": 2
+  },
+  {
+    "id": "2d72bb16-971a-4ddd-98de-c1b17ec7b567",
+    "name": "tuna canned",
+    "category": "pantry",
+    "unit": "each",
+    "quantity": 2
+  }
+]
