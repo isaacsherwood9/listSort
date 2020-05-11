@@ -45,7 +45,13 @@ function renderMaster(list,element){
         data-quantity="${item.quantity}">
         Perishable
         </button>
-        <button type="button">
+        <button type="button"
+        data-action="non-perishable"
+        data-id="${item.id}"
+        data-name="${item.name}"
+        data-unit="${item.unit}"
+        data-catagory="${item.catagory}"
+        data-quantity="${item.quantity}">
         Non Perishable
         </button>
         </div>
@@ -75,13 +81,45 @@ function renderPerishables(list, element){
     })
 }
 
+function rendernonPerishables(list, element){
+    element.innerHTML = '';
+    list.forEach( (item) => {
+        let listItem = 
+        `<li>
+        ${item.name}
+        <button
+        data-id="${item.id}"
+        data-name="${item.name}"
+        data-unit="${item.unit}"
+        data-catagory="${item.catagory}"
+        data-quantity="${item.quantity}">
+        Remove
+        </button> 
+        </li>`;
+        element.insertAdjacentHTML('beforeend', listItem);
+
+    })
+}
+
+function storeList( key, list) {
+    window.localStorage.setItem(key, JSON.stringify(list));
+}
+function loadList (key ){
+    list = JSON.parse(window.localStorage.getItem(key) );
+    return list;
+}
+
+
 
 
 let masterList = [];
 let perishableList = [];
+let nonperishableList = [];
 window.addEventListener('load', () => {
     //selectors for view
     const masterDisplay = document.querySelector('#master');
+    const nonperishableDisplay = document.querySelector('#non-perishables');
+    const perishableDisplay = document.querySelector('#perishables');
     // load the data
     const dataFile = 'data.json';
 
@@ -110,15 +148,28 @@ window.addEventListener('load', () => {
           perishableList.push(item);
           removeFromList(masterList, id);
           sortList(perishableList);
-          const perishableDisplay = document.querySelector('#perishables')
-          renderPerishables( perishableList,perishableDisplay )
-          renderMaster( masterList, masterDisplay)
+          const perishableDisplay = document.querySelector('#perishables');
+          renderPerishables( perishableList,perishableDisplay );
+          renderMaster( masterList, masterDisplay);
+          storeList('master', masterList)
+          storeList('perishables', perishableList)
         }
+
+        if(action=='non-perishable') {
+            nonperishableList.push(item);
+            removeFromList(masterList, id);
+            sortList(nonperishableList);
+            const nonperishableDisplay = document.querySelector('#non-perishables')
+            rendernonPerishables( nonperishableList,nonperishableDisplay )
+            renderMaster( masterList, masterDisplay)
+            storeList('master', masterList)
+            storeList('nonperishables', nonperishableList)
+          }
     })
 
     // add a click listener for perishables list view (perishableDisplay)
 
-    perishableDisplay.addEventListener('click', (event) => {
+perishableDisplay.addEventListener('click', (event) => {
           //get the event target's attributes
           const id = event.target.getAttribute('data-id');
           const name = event.target.getAttribute('data-name');
@@ -133,10 +184,27 @@ window.addEventListener('load', () => {
           masterList.push(item);
           sortList(masterList);
           renderMaster( masterList, masterDisplay);
-
+          storeList('master', masterList);
+          storeList('perishables', perishableList);
 
     })
 
-
-
+nonperishableDisplay.addEventListener('click', (event) => {
+        //get the event target's attributes
+        const id = event.target.getAttribute('data-id');
+        const name = event.target.getAttribute('data-name');
+        const unit = event.target.getAttribute('data-unit');
+        const catagory = event.target.getAttribute('data-catagory');
+        const quantity = event.target.getAttribute('data-quantity');
+        const item = { id: id, name: name, unit: unit, catagory: catagory, quantity: quantity};
+        //remove from NonperishableList
+        removeFromList(nonperishableList, id );
+        sortList(nonperishableList);
+        rendernonPerishables(nonperishableList,nonperishableDisplay );
+        masterList.push(item);
+        sortList(masterList);
+        renderMaster( masterList, masterDisplay);
+        storeList('master', masterList);
+        storeList('nonperishables',nonperishableList);
+    });
 })
